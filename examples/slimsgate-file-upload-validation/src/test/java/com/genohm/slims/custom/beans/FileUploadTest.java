@@ -13,10 +13,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 import com.genohm.slims.custom.CustomConfiguration;
 
 @RunWith(MockitoJUnitRunner.Silent.class)
-public class SayHelloTest {
+public class FileUploadTest {
 
 	@InjectMocks
-	private SayHello sayHello;
+	private FileUpload fileUpload;
 	@Mock
 	private CustomConfiguration customConfiguration;
 
@@ -24,5 +24,6 @@ public class SayHelloTest {
 	public void happyPathTest() {
 
 	}
-	
+
 }
+

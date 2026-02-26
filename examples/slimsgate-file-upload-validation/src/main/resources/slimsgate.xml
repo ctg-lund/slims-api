@@ -4,14 +4,41 @@
 
 <slimsgate>
 	<slimsgate-flow>
-		<id>say-hello</id>
-		<name>Say hello</name>
+		<id>check-file</id>
+		<name>MK Check File</name>
 		<usage>contentmanagement</usage>
 		<step>
-			<name>Say hello</name>
-			<hidden>true</hidden>
+			<name>File import</name>
+			<hidden>false</hidden>
+			<input>
+				<parameter>
+					<label>SLIMS_SELECT_SAMPLES</label>
+					<name>SLIMS_SELECT_SAMPLES</name>
+					<type>StringArray</type>
+				</parameter>
+				<parameter>
+					<label>Select a file</label>
+					<name>file</name>
+					<type>File</type>
+				</parameter>
+				<parameter>
+					<label>Comments</label>
+					<name>strCommentInputHandle</name>
+					<type>String</type>
+				</parameter>
+				<parameter>
+					<label>Comments</label>
+					<name>txtCommentInputHandle</name>
+					<type>Text</type>
+				</parameter>
+				<parameter>
+					<label>dateSelector</label>
+					<name>dateSelectorHandle</name>
+					<type>DateTime</type>
+				</parameter>
+			</input>
 			<process>
-				<route>sayHello</route>
+				<route>checkFile</route>
 			</process>
 		</step>
 	</slimsgate-flow>

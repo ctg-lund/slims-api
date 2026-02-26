@@ -8,13 +8,13 @@ import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SayHelloBuilder extends RouteBuilder {
+public class FileUploadBuilder extends RouteBuilder {
 
 	@Override
 	public void configure() throws Exception {
-		from("direct:hello")
-			.to("bean:sayHello")
-			.routeId("sayHello");
+		from("direct:fileUpload")
+			.to("bean:fileUpload")
+			.routeId("checkFile");
 	}
 
 }
