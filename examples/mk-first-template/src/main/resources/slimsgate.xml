@@ -1,0 +1,18 @@
+<!--
+  ~ Copyright 2021 Agilent Technologies Inc.
+  -->
+
+<slimsgate>
+	<slimsgate-flow>
+		<id>mk-test</id>
+		<name>Say mk hello</name>
+		<usage>contentmanagement</usage>
+		<step>
+			<name>Say mk hello</name>
+			<hidden>true</hidden>
+			<process>
+				<route>mkSayHello</route>
+			</process>
+		</step>
+	</slimsgate-flow>
+</slimsgate>
