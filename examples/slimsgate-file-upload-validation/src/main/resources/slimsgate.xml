@@ -15,6 +15,7 @@
 					<label>SLIMS_SELECT_SAMPLES</label>
 					<name>SLIMS_SELECT_SAMPLES</name>
 					<type>StringArray</type>
+					<required>true</required>
 				</parameter>
 				<parameter>
 					<label>Select a file</label>
